@@ -2,7 +2,7 @@
 
 	About: global pickup respawn system
 	Author: ziggi
-	
+
 	Instalation:
 		Include this file after a_samp.inc and foreach.inc
 
@@ -44,7 +44,6 @@
 #endif
 
 #define _global_pickup_included
-#pragma library global_pickup
 
 /*
 
@@ -132,7 +131,7 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 #else
 	#define _ALS_OnPlayerPickUpDP
 #endif
- 
+
 #define OnPlayerPickUpDynamicPickup GPickup_OnPlayerPickUpDP
 #if defined GPickup_OnPlayerPickUpDP
 	forward GPickup_OnPlayerPickUpDP(playerid, pickupid);
@@ -182,7 +181,7 @@ public OnGameModeInit()
 #else
 	#define _ALS_OnGameModeInit
 #endif
- 
+
 #define OnGameModeInit GPickup_OnGameModeInit
 #if defined GPickup_OnGameModeInit
 	forward GPickup_OnGameModeInit();
